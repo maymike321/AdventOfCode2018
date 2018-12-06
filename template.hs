@@ -1,6 +1,4 @@
-import System.IO
-import Data.List.Split
-
+main :: IO ()
 main = do
         contents <- readFile "input.txt"
-        print f . words $ contents
+        print . f . words $ contents
