@@ -2,8 +2,8 @@ compareBoxes :: String -> String -> String
 compareBoxes (x:xs) (y:ys)
         | x == y = [x] ++ compareBoxes xs ys
         | otherwise = compareBoxes xs ys
-compareBoxes [] _ = []
-compareBoxes _ [] = []
+compareBoxes [] _ = ""
+compareBoxes _ [] = ""
 
 f :: [String] -> String
 f (x:xs)
